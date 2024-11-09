@@ -20,7 +20,10 @@ const MarsScene = () => {
     camera.position.z = 3;
 
     const marsGeometry = new THREE.SphereGeometry(1.5, 36, 16);
-    const marsMaterial = new THREE.MeshBasicMaterial({ color: 0xff45003, wireframe: true });
+    const marsMaterial = new THREE.MeshBasicMaterial({
+      color: 0xff45003,
+      wireframe: true,
+    });
     const mars = new THREE.Mesh(marsGeometry, marsMaterial);
 
     scene.add(mars);
